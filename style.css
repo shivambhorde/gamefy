@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    background-color: rgb(3, 10, 16);
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 35px;
+    gap: 100px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar ul li{
+    display: inline-block;
+    
+}
+
+.navbar ul span {
+    margin-left: 25%;
+   
+}
+
+.navbar ul span a{
+    margin-right: 25px;
+    color: white;
+    font-family: 'EloquiaText';
+}
+
+.navbar .logo{
+    font-family: 'ITC Anna';
+    color: rgb(179, 255, 0);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.navbar img{
+    height: auto;
+    width: 12vh;
+    position: absolute;
+    margin-left: -23vh;
+    margin-top: -13px;
+}
+
+.navbar li a{
+    text-decoration: none;
+}
+
+.navbar button{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    color: rgb(179, 255, 0);
+    width: 150px;
+    height: 50px;
+    border-color: rgb(179, 255, 0);
+    margin-left: 43vh;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+}
+
+@font-face {
+    font-family: 'ITC Anna';
+    src: url(./fonts/Anna\ Extended\ ITC\ Std\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'EloquiaText';
+    src: url(./fonts/Typekiln\ -\ EloquiaText-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: 'reqnad-stencil';
+    src: url(./fonts/tr-reqnad-display-stencil.ttf);
+}
+
+@font-face {
+    font-family: 'Prumo';
+    src: url(./fonts/Prumo\ Banner\ W00\ Bold.ttf);
+}
+
+.getStarted{
+    width: 93%;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 100px;
+    background-image: url(./images/timemachine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.getStarted h3{
+    font-family: 'ITC Anna';
+    color: white;
+    font-size: 8vh;
+    margin-top: 18vh;
+}
+
+.getStarted p{
+    font-family: 'EloquiaText';
+    color: white;
+    margin-top: 5vh;
+    letter-spacing: 0.8px;
+}
+
+.getStarted .started{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 0 18px rgb(179, 255, 0);
+    border: none;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+    margin-top: 35px;
+}
+
+.getStarted .explore{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    color: rgb(179, 255, 0);
+    width: 150px;
+    height: 50px;
+    border-color: rgb(179, 255, 0);
+    margin-left: 3vh;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+}
+
+h5{
+    color: white;
+    font-family: 'ITC Anna';
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 10vh;
+    letter-spacing: 2.5px;
+}
+
+.top-product{
+    width: 93%;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 100px;
+    display: flex;
+}
+
+.top-product .p1{
+    width: 170%;
+    height: auto;
+    background-color: #0F1910;
+    display: flex;
+}
+
+.top-product .p1right{
+    width: 100%;
+}
+
+.top-product .p1left img{
+    height: 35vh;
+    width: 35vh
+}
+
+.top-product .p1 .p1right h4{
+    font-family: 'reqnad-stencil';
+    color: white;
+    font-size: 30px;
+    margin-left: 13%;
+    margin-top: 10%;
+}
+
+.top-product .p1right p{
+    font-family: 'EloquiaText';
+    color: white;
+    font-size: 18px;
+    margin-left: 13%;
+    margin-top: 10%;
+    letter-spacing: 0.5px;
+}
+
+.top-product .p2{
+    width: 120%;
+    height: auto;
+    margin-left: 3vh;
+    background-color: #0F1910;
+    display: flex;
+    overflow: hidden;
+}
+
+.top-product .p2 img{
+    height: 35vh;
+    width: 35vh
+}
+
+.top-product .p2 .p2right h4{
+    font-family: 'reqnad-stencil';
+    color: white;
+    font-size: 30px;
+    margin-left: 13%;
+    margin-top: 10%;
+}
+
+.top-product .p2right{
+    overflow: hidden;
+    width: 100%;
+    background-color: red;
+}
+
+h4{
+    color: white;
+    font-family: 'ITC Anna';
+    font-size: 40px;
+    margin-left: 43%;
+    margin-top: 20vh;
+    letter-spacing: 2.5px;
+}
+
+.images{
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+}
+
+.images .row1{
+    display: flex;
+    gap: 5vh;
+}
+
+.row1 .img1{
+    height: 35vh;
+    width: 65vh;
+    background-image: url(./images/1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row1 .img2{
+    height: 35vh;
+    width: 65vh;
+    background-image: url(./images/2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row1 .img3{
+    height: 35vh;
+    width: 65vh;
+    background-image: url(./images/3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.images .row2{
+    display: flex;
+    gap: 5vh;
+    margin-top: 5vh;
+}
+
+.row2 .img4{
+    height: 35vh;
+    width: 33vh;
+    background-image: url(./images/4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row2 .img5{
+    height: 35vh;
+    width: 65vh;
+    background-image: url(./images/5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row2 .img6{
+    height: 35vh;
+    width: 65vh;
+    background-image: url(./images/6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.row2 .img7{
+    height: 35vh;
+    width: 33vh;
+    background-image: url(./images/7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.started2{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 0 18px rgb(179, 255, 0);
+    border: none;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+    margin-top: 5vh;
+    margin-left: 45%;
+}
+
+.cutting{
+    width: 100%;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+}
+
+.cutting .left{
+    width: 40%;
+    margin-left: 13vh;
+}
+
+.cutting .right h2{
+    font-family: 'ITC Anna';
+    color: white;
+    font-size: 7vh;
+    margin-top: 13vh;
+}
+
+.cutting .right p{
+    font-family: 'EloquiaText';
+    color: white;
+    font-size: 2vh;
+    margin-top: 13vh;
+    letter-spacing: 2px;
+}
+
+.cutting .right .started3{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    width: 200px;
+    height: 50px;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 0 18px rgb(179, 255, 0);
+    border: none;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+    margin-top: 13vh;
+    margin-left: 0%;
+}
+
+.cutting .right img{
+    margin-top: 12vh;
+    margin-left: 25px;
+    position: absolute;
+    height: auto;
+    width: 7vh;
+}
+
+.cutting .right .explore{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    color: rgb(179, 255, 0);
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-left: 8vh;
+    font-size: 23px;
+    font-family: 'ITC Anna';
+}
+
+.end{
+    background-color: rgb(3, 10, 16);
+    width: 100%;
+    height: auto;
+}
+
+.end img{
+    width: 100%;
+    height: 100%;
+    margin-top: 30vh
+}
+
+.newsletter{
+    position: absolute;
+    margin-left: 15%;
+    width: 70%;
+    height: 65%;
+    background-color: rgb(179, 255, 0) ;
+    box-shadow: 0 0 100px rgb(72, 30, 40);
+}
+
+.newsletter h2{
+    font-family: 'Prumo';
+    margin-left: 32%;
+    margin-top: 10%;
+    font-size: 6vh;
+    color: #1D2437;
+}
+
+.newsletter p{
+    font-family: 'EloquiaText';
+    color: #1D2437;
+    margin-top: 5vh;
+    margin-left: 0%;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.newsletter .subs{
+    background-color: #1D2437;
+    width: 40%;
+    height: 10%;
+    margin-left: 32%;
+    margin-top: 5vh;
+}
+
+.newsletter .subs button{
+    text-decoration: none;
+    background-color: rgb(3, 10, 16);
+    width: 100px;
+    height: 30px;
+    background-color: rgb(179, 255, 0);
+    box-shadow: 0 0 10px rgb(179, 255, 0);
+    border: none;
+    font-size: 15px;
+    font-family: 'Prumo';
+    letter-spacing: 0.8px;
+    margin-top: 8px;
+    margin-left: 74%;
+}
+
+.newsletter .subs p{
+    font-family: 'EloquiaText';
+    color:rgba(255, 255, 255, 0.645);
+    margin-top: -5%;
+    margin-left: -40%;
+    font-size: 12px;
+}
+
+.end .footer{
+    position: absolute;
+    width: 79.55%;
+    height: 40%;
+    margin-top: -20%;
+    margin-left: 10%;
+}
+
+.end .footer span{
+    color: white;
+}
+
+.footer .container2{
+    position: absolute;
+    display: flex;
+}
+
+.container2 .left{
+    position: absolute;
+    background-color:red;
+    width: 100%;
+    height: 400%;
+}
+
+.container2 .right{
+    position: absolute;
+    background-color:white;
+    width: 10%;
+    height: 40%;
+}
+
+footer{
+    position: relative;
+    z-index: -1;
+    height: 630px;
+    background-color: rgb(3, 10, 16);
+}
+
+footer img{
+    height: 600px;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.footer-text{
+    width: 90%;
+    margin-left: 85px;
+}
+
+.footer{
+    width: 90%;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content{
+    width: 350px;
+}
+
+.neon-div{
+    height: 200px;
+    width: 700px;
+    background-color: #BDFC27;
+    padding: 50px;
+    text-align: center;
+    margin-left: 300px;
+    position: absolute;
+    top: -100px;   
+}
+
+.neon-div h2{
+    font-size: 30px;
+}
+
+.logo1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;      
+}
+
+.list{
+    padding: 90px;
+    text-align: left;
+    color: white;
+    font-family: 'roboto';
+}
+
+th{
+    padding-left: 100px;
+}
+
+td{
+    padding-left: 100px;
+    font-weight: lighter;
+}
+
+hr{
+    width: 90%;
+    position: absolute;
+    bottom:350px;
+}
+
+.empty-row {
+    height: 20px;
+}
+
+.footer-content p{
+    font-family: 'roboto';
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 8px;
+}
